@@ -477,15 +477,16 @@
 
         .purchase-btn-group {
             display: flex;
-            gap: 10px;
+            flex-direction: column;
+            gap: 12px;
             width: 100%;
         }
 
         .purchase-btn {
-            flex: 1;
             width: 100%;
             min-width: 0;
-            padding: 18px 8px;
+            height: 60px;
+            padding: 0 12px;
             background: linear-gradient(135deg, #ffffff 0%, #f5f9ff 100%);
             color: #4a8ac5;
             border: none;
@@ -501,23 +502,15 @@
             text-overflow: ellipsis;
             text-align: center;
             text-decoration: none;
+            box-sizing: border-box;
             display: inline-flex;
             align-items: center;
             justify-content: center;
         }
 
-        @media (max-width: 480px) {
-            .purchase-btn {
-                font-size: 0.78rem;
-                padding: 16px 4px;
-                letter-spacing: -0.5px;
-            }
-        }
-
         @media (max-width: 380px) {
             .purchase-btn {
-                font-size: 0.68rem;
-                padding: 14px 2px;
+                font-size: 1rem;
             }
         }
 
@@ -680,8 +673,8 @@
                     <div class="total-label">💰 최종 결제 금액</div>
                     <div class="total-amount" id="total-amount">₩0</div>
                     <div class="purchase-btn-group">
-                        <a href="https://go.weverse.io/qt3S/owxqe7gj" target="_blank" rel="noopener noreferrer" class="purchase-btn" id="purchase-btn-weverse">🛒 위버스 구매하기</a>
-                        <a href="http://bws-officialmd.com" target="_blank" rel="noopener noreferrer" class="purchase-btn" id="purchase-btn-bws">🛒 변우석md샵 구매하기</a>
+                        <a href="https://go.weverse.io/qt3S/owxqe7gj" target="_blank" rel="noopener noreferrer" class="purchase-btn" id="purchase-btn-weverse">🛒 위버스 바로가기</a>
+                        <a href="http://bws-officialmd.com" target="_blank" rel="noopener noreferrer" class="purchase-btn" id="purchase-btn-bws">🛒 변우석md샵 바로가기</a>
                     </div>
                 </div>
 
